@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Clima </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="onLoad()">
+
+    <div id="container" class="contaier" data-tilt data-tilt-glare data-tilt-max-glare="0.5"  data-tilt-scale="1.1">
+        <div>
+            <div class="block">
+                <div id="location"></div>
+                <div id="date"></div>
+                
+            </div>
+            <div class="block">
+                <div class="information-container">
+                    Temperatura
+                    <div class="information" id="temperature"></div>
+                </div>
+                <div class="information-container">
+                    Humedad
+                    <div class="information" id="humidity"></div>
+                </div>
+                <div class="information-container">
+                    <div id="description"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="reloj">
+            <h2 id="hora">00 : 00 </h2>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".your-element"), {
+            max: 25,
+            speed: 1000,
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+</body>
+</html>

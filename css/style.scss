@@ -1,0 +1,70 @@
+*{
+    font-family: "Roboto",sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A3D45;
+
+}
+#container{
+    background-color: #DDC9B4;
+    padding: 20px;
+    color: #2A3D45;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transform-style: preserve-3d;
+    transform: perspective;
+
+
+    
+}
+
+.block {
+    text-align: center;
+    padding: 20px;
+
+    transform: translateZ(20px)
+}
+
+.block:first-child {
+    background-color: #2A3D45;
+    color: #DDC9B4;
+   }
+
+   .information-container {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+
+   
+    transform: translateZ(20px)
+}
+
+.information {
+    transform: translateZ(50px);
+    margin-left: 5px;
+}
+
+#location {
+    font-weight: bold;
+    font-size: 22px;  
+} 
+
+.reloj{
+    width: 100%;
+    color: #DDC9B4;
+    background-color:#2A3D45;
+    text-align: center;
+
+    transform: translateZ(20px);
+    #hora{
+        padding: 10px 0;
+    }
+}
